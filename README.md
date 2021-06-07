@@ -11,7 +11,7 @@ This uses
 
 as well as `pytest` to test and `pylint` for style checking for the development process.
 
-Made for the [workshop](https://125summer.tech/cli) in Summer 21 [125 Summer of Side Projects](https://125summer.tech/cli)
+Made for the [workshop](https://125summer.tech/cli) in Summer 21 [125 Summer of Side Projects](https://125summer.tech)
 
 ## Demo
 
