@@ -23,7 +23,7 @@ class FancyGitAdd(cli.Application):
     VERSION = "1.3"
     commit = cli.Flag(['c', 'commit'], help="Commits the added files as well")
     def main(self):
-        print_banner("Welcome to Fancy Git ")
+        print_banner("Git Fancy add")
         files = get_files()
         
         question = generate_question(files)
