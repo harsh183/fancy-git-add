@@ -15,7 +15,7 @@ def generate_question(files):
     return [{
         'type': 'checkbox',
         'name': 'files',
-        'message': 'What would you like to commit?',
+        'message': 'What would you like to add?',
         'choices': [{'name': file.strip()} for file in files],   
     }]
 
@@ -30,6 +30,8 @@ class FancyGitAdd(cli.Application):
         question = generate_question(files)
         answers = prompt(question)
         git('add', answers['files'])
+        if self.commit:
+            git('commit', '-m', 'updates')
 
 if __name__ == "__main__":
     FancyGitAdd()
