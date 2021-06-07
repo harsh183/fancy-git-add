@@ -19,7 +19,6 @@ def generate_question(files):
         'choices': [{'name': file.strip()} for file in files],   
     }]
 
-
 class FancyGitAdd(cli.Application):
     VERSION = "1.3"
     commit = cli.Flag(['c', 'commit'], help="Commits the added files as well")
@@ -48,4 +47,3 @@ def test_generate_question():
     assert len(question) == 1, "has to be one question"
     assert question[0]['type'] == 'checkbox', "has to allow multiple selections"
     assert len(question[0]['choices']) == len(files), "same number of choices as files"
-    
