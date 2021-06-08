@@ -48,6 +48,12 @@ $ python fgit.py -c
 ? What would you like to add? [file3.txt]
 ```
 
+If you want to push as well use the flag `--push`/`-p`
+
+```
+$ python fgit.py -cp
+```
+
 Get help
 
 ```
